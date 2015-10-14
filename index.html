@@ -103,6 +103,252 @@
         <div class="content"></div>
       </section>
 
+      <section>
+        <div class="content">
+          <h3>Let's start with the talk!</h3>
+        </div>
+      </section>
+
+      <section>
+        <div class="content">
+          <h3>But before, in case you didn't understand the name</h3>
+        </div>
+      </section>
+
+      <section data-bespoke-state="sw-droids">
+        <div class="content">
+          
+        </div>
+      </section>
+
+      <section>
+        <div class="content">
+          <div class="byline">
+            <div class="classy">
+            This talk is about
+            </div>
+          </div>
+          <h3>Something obvious</h3>
+          <div class="byline">
+            <div class="classy">
+              that's
+            </div>
+          </div>
+          <h3>not that obvious</h3>
+          <div class="unbrokenline"></div>
+        </div>
+      </section>
+
+      <section>
+        <div class="content">
+          <h3>What's a model in your angular 1 app?</h3>
+        </div>
+      </section>
+
+      <section data-bespoke-state="code long">
+        <div class="content">
+<pre data-line="3-6"><code class="language-javascript">
+module.controller('HomeCtrl', function($scope) {
+  $scope.person = {
+    name: 'Gonto',
+    company: 'Auth0'
+  };
+
+  $scope.changeName = function(toName) {
+    if (toName === 'Martin') {
+      alert("No Martins are allowed");
+    } else {
+      $scope.person = toName;
+    }
+  };
+});
+</code></pre>
+        </div>
+      </section>
+
+      <section>
+        <div class="content">
+          <h3>Do you see any problems with this?</h3>
+        </div>
+      </section>
+
+      <section>
+        <div class="content">
+          <div class="byline">
+            <div class="classy">
+              Don't be freaked out but..
+            </div>
+          </div>
+          <h3>Do you remember the EDR?</h3>
+          <div class="unbrokenline"></div>
+        </div>
+      </section>
+
+      <section data-bespoke-state="edr">
+        <div class="content">
+        </div>
+      </section>
+
+      <section data-bespoke-state="edr-real programming">
+        <div class="content">
+
+        </div>
+      </section>
+
+      <section>
+        <div class="content">
+          <h3>What about a Class Diagram?</h3>
+        </div>
+      </section>
+
+      <section data-bespoke-state="no-more">
+        <div class="content">
+        </div>
+      </section>
+
+      <section data-bespoke-state="cd-real programming">
+        <div class="content">
+
+        </div>
+      </section>
+
+      <section>
+        <div class="content">
+          <div class="unbrokenline"></div> 
+          <h3>A model</h3>
+          <div class="byline">
+            <div class="classy">has</div>
+          </div>
+          <h3>State & Behaviour</h3>
+          <div class="unbrokenline"></div> 
+        </div>
+      </section>
+
+      <section data-bespoke-state="rewind">
+        <div class="content">
+
+        </div>
+      </section>
+
+      <section>
+        <div class="content">
+          <h3>What's a model in your angular 1 app?</h3>
+        </div>
+      </section>
+
+      <section data-bespoke-state="code long">
+        <div class="content">
+<pre data-line="3-6"><code class="language-javascript">
+module.controller('HomeCtrl', function($scope) {
+  $scope.person = {
+    name: 'Gonto',
+    company: 'Auth0'
+  };
+
+  $scope.changeName = function(toName) {
+    if (toName === 'Martin') {
+      alert("No Martins are allowed");
+    } else {
+      $scope.person = toName;
+    }
+  };
+});
+</code></pre>
+        </div>
+      </section>
+
+      <section>
+        <div class="content">
+          <h3>What's a model in your angular 2 app?</h3>
+        </div>
+      </section>
+
+      <section data-bespoke-state="code long">
+        <div class="content">
+<pre data-line="1-4"><code class="language-typescript">class Person {
+  name: string;
+  company: number;
+}
+
+@Component({
+  selector: 'users'
+})
+@View({
+  directives: [FORM_DIRECTIVES],
+  templateUrl: 'userTemplate.html'
+})
+class UsersAppComponent {
+  
+  person = new Person();
+
+  changeName(toName) {
+    if (toName === 'Martin') {
+      alert("No Martins are allowed");
+    } else {
+      person.name = toName;
+    }
+  }
+}
+</code></pre>
+        </div>
+      </section>
+
+      <section data-bespoke-state="not-cool">
+        <div class="content">
+          <h3>Now can you see why this is not good?</h3>
+        </div>
+      </section>
+
+      <section data-bespoke-state="not-cool">
+        <div class="content">
+          <div class="byline">
+            <div class="classy">There is</div>
+          </div>
+          <h3>Only state</h3>
+          <div class="unbrokenline"></div>
+          <h3>No behaviour</h3>
+          <div class="unbrokenline"></div>
+        </div>
+      </section>
+
+      <section data-bespoke-state="not-cool">
+        <div class="content">
+          <h3>Doesn't follow DRY</h3>
+        </div>
+      </section>
+
+      <section data-bespoke-state="not-cool">
+        <div class="content">
+          <h3>Validations are in the view, not in the model</h3>
+        </div>
+      </section>
+
+      <section data-bespoke-state="not-cool">
+        <div class="content">
+          <h3>Can't share models with the backend</h3>
+        </div>
+      </section>
+
+      <section data-bespoke-state="force">
+        <div class="content">
+          
+        </div>
+      </section>
+
+      <section>
+        <div class="content">
+          <h3>Just in case the force doesn't work</h3>
+        </div>
+      </section>
+
+      <section data-bespoke-state="demo">
+        <div class="content">
+          <h3>Live demo!</h3>
+        </div>
+      </section>
+
+      
+
       <section data-bespoke-state="the-end">
         <div class="content">
         </div>
@@ -116,7 +362,7 @@
       <section>
         <div class="content">
           <a target="_blank" href="https://auth0.com/signup?utm_source=gonto-slides&utm_medium=talk&utm_campaign=PLACENAME"><img src="img/badge.png"></a>
-          <button target="_blank" href="https://auth0.com/signup?utm_source=gonto-slides&utm_medium=talk&utm_campaign=PLACENAME" class="btn-free">Create a free account!</button>
+          <button target="_blank" href="https://auth0.com/signup?utm_source=gonto-slides&utm_medium=talk&utm_campaign=PLACENAME" class="btn-free">Signup for free!</button>
           <h4><a target="_blank" href="https://auth0.com/signup?utm_source=gonto-slides&utm_medium=talk&utm_campaign=PLACENAME">auth0.com/signup</a></h4>
         </div>
       </section>

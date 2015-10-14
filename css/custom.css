@@ -209,12 +209,6 @@ article.sub-subject-change::before {
   background: gray;
 }
 
-article.demo::before {
-  -webkit-filter: blur(2.25px) grayscale(0.3) brightness(0.4);
-  -moz-filter: blur(2.25px) grayscale(0.3) brightness(0.4);
-  filter: blur(2.25px) grayscale(0.3) brightness(0.4);
-  background: green;
-}
 
 article.onemore::before {
   -webkit-filter: none;
@@ -222,6 +216,72 @@ article.onemore::before {
   filter: none;
   background-image: url("../img/onemore.jpg");
 }
+
+article.sw-droids::before {
+  -webkit-filter: none;
+  -moz-filter: none;
+  filter: none;
+  background-image: url("../img/sw-droids.gif");
+}
+
+article.edr::before {
+  -webkit-filter: none;
+  -moz-filter: none;
+  filter: none;
+  background-image: url("../img/edr.gif");
+}
+
+article.edr-real::before {
+  -webkit-filter: none;
+  -moz-filter: none;
+  filter: none;
+  background-size: contain;
+  background-image: url("../img/edr-real.png");
+}
+
+article.no-more::before {
+  -webkit-filter: none;
+  -moz-filter: none;
+  filter: none;
+  background-image: url("../img/no-more.gif");
+}
+
+article.cd-real::before {
+  -webkit-filter: none;
+  -moz-filter: none;
+  filter: none;
+  background-size: contain;
+  background-image: url("../img/cd-real.jpg");
+}
+
+article.rewind::before {
+  -webkit-filter: none;
+  -moz-filter: none;
+  filter: none;
+  background-image: url("../img/rewind.gif");
+}
+
+article.not-cool::before {
+  -webkit-filter: blur(6.6px) grayscale(0.5) brightness(0.3);
+  -moz-filter: blur(6.6px) grayscale(0.5) brightness(0.3);
+  filter: blur(6.6px) grayscale(0.5) brightness(0.3);
+  background-image: url("../img/not-cool.jpg");
+}
+
+article.demo::before {
+  -webkit-filter: blur(2.25px) grayscale(0.3) brightness(0.4);
+  -moz-filter: blur(2.25px) grayscale(0.3) brightness(0.4);
+  filter: blur(2.25px) grayscale(0.3) brightness(0.4);
+  background: green;
+}
+
+article.force::before {
+  -webkit-filter: none;
+  -moz-filter: none;
+  filter: none;
+  background-image: url("../img/force.gif");
+}
+
 
 article.the-end::before {
   -webkit-filter: none;
