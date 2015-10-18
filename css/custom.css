@@ -290,6 +290,20 @@ article.the-end::before {
   background-image: url("../img/the-end.gif");
 }
 
+article.jeff::before {
+  -webkit-filter: none;
+  -moz-filter: none;
+  filter: none;
+  background-image: url("../img/jeff.jpg");
+}
+
+article.friends::before {
+  -webkit-filter: none;
+  -moz-filter: none;
+  filter: none;
+  background-image: url("../img/friends.gif");
+}
+
 article.fotolog::before {
   -webkit-filter: none;
   -moz-filter: none;

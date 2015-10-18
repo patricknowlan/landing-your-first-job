@@ -111,11 +111,64 @@
 
       <section>
         <div class="content">
-          <h3>But before, in case you didn't understand the name</h3>
+          <div class="byline">
+            <div class="classy">But before,</div>
+          </div>
+          <h3>in case you didn't understand the name</h3>
+          <div class="unbrokenline"></div>
         </div>
       </section>
 
       <section data-bespoke-state="sw-droids">
+        <div class="content">
+          
+        </div>
+      </section>
+
+      <section>
+        <div class="content">
+          <div class="byline">
+            <div class="classy">You've heard at</div>
+          </div>
+          <h3>This conference</h3>
+          <div class="byline">
+            <div class="classy">about</div>
+          </div>
+          <h3>RxJS, Observables and FRP</h3>
+          <div class="unbrokenline"></div>
+        </div>
+      </section>
+
+      <section data-bespoke-state="jeff">
+        <div class="content">
+        </div>
+      </section>
+
+      <section>
+        <div class="content">
+          <h3>But less cool without the beard</h3>
+        </div>
+      </section>
+
+      <section>
+        <div class="content">
+          <h3>They're really nice!</h3>
+        </div>
+      </section>
+
+      <section>
+        <div class="content">
+          <h3>I love and use RxJS</h3>
+        </div>
+      </section>
+
+      <section>
+        <div class="content">
+          <h3>But this talk is about another approach</h3>
+        </div>
+      </section>
+
+      <section data-bespoke-state="friends">
         <div class="content">
           
         </div>
@@ -141,7 +194,7 @@
 
       <section>
         <div class="content">
-          <h3>What's a model in your angular 1 app?</h3>
+          <h3>What's a model in your Angular app?</h3>
         </div>
       </section>
 
@@ -166,6 +219,36 @@ module.controller('HomeCtrl', function($scope) {
         </div>
       </section>
 
+      <section data-bespoke-state="code long">
+        <div class="content">
+<pre data-line="1-4"><code class="language-typescript">class Person {
+  name: string;
+  company: number;
+}
+
+@Component({
+  selector: 'users'
+})
+@View({
+  directives: [FORM_DIRECTIVES],
+  templateUrl: 'userTemplate.html'
+})
+class UsersAppComponent {
+  
+  person = new Person();
+
+  changeName(toName) {
+    if (toName === 'Martin') {
+      alert("No Martins are allowed");
+    } else {
+      person.name = toName;
+    }
+  }
+}
+</code></pre>
+        </div>
+      </section>
+
       <section>
         <div class="content">
           <h3>Do you see any problems with this?</h3>
@@ -179,7 +262,7 @@ module.controller('HomeCtrl', function($scope) {
               Don't be freaked out but..
             </div>
           </div>
-          <h3>Do you remember the EDR?</h3>
+          <h3>Do you remember the ERD?</h3>
           <div class="unbrokenline"></div>
         </div>
       </section>
@@ -216,6 +299,10 @@ module.controller('HomeCtrl', function($scope) {
         <div class="content">
           <div class="unbrokenline"></div> 
           <h3>A model</h3>
+          <div class="byline">
+            <div class="classy">in</div>
+          </div>
+          <h3>Real life</h3>
           <div class="byline">
             <div class="classy">has</div>
           </div>
@@ -299,6 +386,13 @@ class UsersAppComponent {
         </div>
       </section>
 
+
+      <section data-bespoke-state="not-cool">
+        <div class="content">
+          <h3>It doesn't mimic the "real world"</h3>
+        </div>
+      </section>
+
       <section data-bespoke-state="not-cool">
         <div class="content">
           <div class="byline">
@@ -344,6 +438,7 @@ class UsersAppComponent {
       <section data-bespoke-state="demo">
         <div class="content">
           <h3>Live demo!</h3>
+          <h4>github.com/auth0/angular2-models-di</h4>
         </div>
       </section>
 
